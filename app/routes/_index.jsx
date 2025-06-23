@@ -2,7 +2,7 @@ import {Await, useLoaderData, Link} from 'react-router';
 import {Suspense} from 'react';
 import {Image} from '@shopify/hydrogen';
 import {ProductItem} from '~/components/ProductItem';
-import Banner from '../components/Banner';
+import Banner from '~/components/Banner';
 
 /**
  * @type {MetaFunction}
@@ -14,8 +14,7 @@ export const meta = () => {
 export default function Home() {
   return (
     <>
-      <Banner />
-      {/* Add more sections/components below as needed */}
+      {/* <Banner /> */}
     </>
   );
 }
