@@ -3,7 +3,8 @@ import {Suspense} from 'react';
 import {Image} from '@shopify/hydrogen';
 import {ProductItem} from '~/components/ProductItem';
 import Banner from '~/components/Banner';
-
+import Testimonials from '~/components/Testimonials';
+import ImageAccordionSection from '~/components/ImageAccordionSection';
 /**
  * @type {MetaFunction}
  */
@@ -69,6 +70,12 @@ export default function Homepage() {
   return (
     <div className="home">
       <Banner/>
+       <div className="bg-yellow-100 text-2xl font-bold p-4">
+      🎉 Tailwind is working!
+    </div>
+    
+      <Testimonials />
+      <ImageAccordionSection />
       <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} />
     </div>

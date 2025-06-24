@@ -1,0 +1,9 @@
+.testimonials .testimonials-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.testimonials .testimonials-wrap > div {
+    width: calc(33% - 50px);
+}

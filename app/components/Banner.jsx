@@ -1,9 +1,10 @@
 import React from 'react';
-
+import './Banner.css';
 export default function Banner() {
   return (
+    <div class="container">
     <section
-      className="bg-cover bg-center text-white py-24 px-4"
+      className="bg-cover banner-hme bg-center text-white py-24 px-4"
       style={{
         backgroundImage: `url('https://cdn.shopify.com/s/files/1/0691/3025/6522/files/bnr1.png')`,
       }}
@@ -19,5 +20,6 @@ export default function Banner() {
         </a>
       </div>
     </section>
+    </div>
   );
 }

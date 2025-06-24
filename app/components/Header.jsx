@@ -2,25 +2,29 @@ import {Suspense} from 'react';
 import {Await, NavLink, useAsyncValue} from 'react-router';
 import {useAnalytics, useOptimisticCart} from '@shopify/hydrogen';
 import {useAside} from '~/components/Aside';
-
+import './Header.css';
 /**
  * @param {HeaderProps}
  */
 export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   const {shop, menu} = header;
   return (
+    <><div class="container mx-auto px-40"><div class="promo-bnr">Free Standard shipping on us orders $35+ <a href="#">Learn More</a></div>
     <header className="header">
-      <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>{shop.name}</strong>
-      </NavLink>
+      
       <HeaderMenu
         menu={menu}
         viewport="desktop"
         primaryDomainUrl={header.shop.primaryDomain.url}
         publicStoreDomain={publicStoreDomain}
       />
+      <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
+        <img src="https://cdn.shopify.com/s/files/1/0691/3025/6522/files/Logo.png" alt="Logo Image" />
+      </NavLink>
       <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
     </header>
+    </div>
+    </>
   );
 }
 
