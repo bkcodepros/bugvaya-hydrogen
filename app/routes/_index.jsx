@@ -11,13 +11,7 @@ export const meta = () => {
   return [{title: 'Hydrogen | Home'}];
 };
 
-export default function Home() {
-  return (
-    <>
-      {/* <Banner /> */}
-    </>
-  );
-}
+
 /**
  * @param {LoaderFunctionArgs} args
  */
@@ -70,8 +64,11 @@ function loadDeferredData({context}) {
 export default function Homepage() {
   /** @type {LoaderReturnData} */
   const data = useLoaderData();
+ 
+ 
   return (
     <div className="home">
+      <Banner/>
       <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} />
     </div>
