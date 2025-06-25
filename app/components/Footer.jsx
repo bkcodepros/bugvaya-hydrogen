@@ -1,26 +1,71 @@
-import {Suspense} from 'react';
-import {Await, NavLink} from 'react-router';
+import React from 'react';
 
 /**
  * @param {FooterProps}
  */
 export function Footer({footer: footerPromise, header, publicStoreDomain}) {
   return (
-    <Suspense>
-      <Await resolve={footerPromise}>
-        {(footer) => (
-          <footer className="footer">
-            {footer?.menu && header.shop.primaryDomain?.url && (
-              <FooterMenu
-                menu={footer.menu}
-                primaryDomainUrl={header.shop.primaryDomain.url}
-                publicStoreDomain={publicStoreDomain}
-              />
-            )}
-          </footer>
-        )}
-      </Await>
-    </Suspense>
+    <div className="container"><footer className="footer">
+      <div className="footer-inner">
+        <div className="footer-logo"><img src="/images/lg-footer.svg" /></div>
+        <div className="footer-columns">
+          <div className="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li>We're here M–F 9am – 5pm PST.</li>
+              <li><a href="#">Drop us a note anytime.</a></li>
+              <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+              <li><a href="#">Return</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Bugvaya Futures</a></li>
+              <li><a href="#">Impact</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Official</h4>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#"><img src="/images/Instagram .svg"  alt="Instagram" /> Instagram</a></li>
+              <li><a href="#"><img src="/images/YouTube.svg"  alt="Youtube" /> YouTube</a></li>
+              <li><a href="#"><img src="/images/TikTok.svg"  alt="TikTok" /> TikTok</a></li>
+              <li>
+                <select>
+                  <option>United States (USD $)</option>
+                  <option>India (INR ₹)</option>
+                  <option>UK (GBP £)</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© Copyright 2025. Bugvaya</p>
+          <div className="payment-icons">
+            <img src="/images/payment.png" alt="payment" />
+           
+          </div>
+        </div>
+      </div>
+    </footer></div>
+    
   );
 }
 
