@@ -1,9 +1,64 @@
 .testimonials .testimonials-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
 }
 
 .testimonials .testimonials-wrap > div {
-    width: calc(33% - 50px);
+    width: calc(33% - 30px);
+    background: #F5F5F5;
+    border-radius: 30px;
+    padding: 40px 35px;
+    box-sizing: border-box;
+}
+.testimonials .testimonials-wrap > div .testi-head {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonials .testimonials-wrap > div .testi-head h4 {
+    font-size: 30px;
+    color: #000;
+    font-family: 'So:hne Breit Fett';
+}
+
+.testimonials .testimonials-wrap > div .testi-head p.text-gray-500 {
+    font-size: 18px;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+
+.testimonials .testimonials-wrap > div .testi-head p span.text-blue-500 {
+    border-radius: 50%;
+    background: #000;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.testimonials .testimonials-wrap > div h5 {
+    font-size: 28px;
+    color: #181717;
+    font-family: 'So:hne Breit Fett';
+}
+
+.testimonials .testimonials-wrap > div p.text-sm {
+    font-size: 24px;
+    color: #666;
+    font-family: 'So:hne Breit';
+    margin: 10px 0 20px;
+}
+
+.testimonials .testimonials-wrap > div .flex.gap-1.text-black {
+    font-size: 32px;
+    color: #181717;
+    font-family: 'So:hne Breit';
+}
+
+.testimonials h2 {
+    font-size: 42px;
+    color: #181717;
+    margin-bottom: 30px;
+    font-family: 'So:hne Breit Fett';
+}
+.testimonials .testimonials-wrap > div .testi-head img {
+    height: 100px;
 }

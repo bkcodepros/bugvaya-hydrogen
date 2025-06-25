@@ -1,0 +1,46 @@
+.botenical-hme {
+    padding: 150px 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.botenical-hme .botenical-txt {
+    max-width: 933px;
+    margin: 0 auto;
+}
+.botenical-hme .botenical-txt p.subtitle {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+
+.botenical-hme .botenical-txt h2 {
+    font-size: 64px;
+    color: #fff;
+    font-family: 'So:hne Breit Fett';
+}
+
+.botenical-hme .botenical-txt p {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+
+.botenical-hme .botenical-txt a.btn-primary.btn {
+    margin-top: 40px;
+    color: #181717;
+    font-size: 16px;
+    background: #fff;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: 'So:hne Breit Kra:ftig';
+    text-decoration: none;
+}
+
+.botenical-hme .botenical-txt a.btn-primary.btn svg {
+    width: 22px;
+    height: auto;
+    position: relative;
+    top: 5px;
+}

@@ -16,7 +16,10 @@ export default function Banner() {
           href="/collections/all"
           className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition"
         >
-          Shop Now
+          Shop Now <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+<path d="M9.25 21.25L21.75 8.75" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.25 8.75H21.75V21.25" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
         </a>
       </div>
     </section>

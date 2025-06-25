@@ -1,7 +1,38 @@
-.container {
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 0 50px;
-    width: 100%;
-    box-sizing: border-box;
+section.new-collection {
+    padding: 250px 150px;
+    border-radius: 30px;
+}
+.new-collection .col-text {
+    max-width: 550PX;
+}
+
+.new-collection .col-text p.subtitle {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'So:hne Breit';
+    margin-bottom: 10px;
+}
+
+.new-collection .col-text h2 {
+    font-size: 42px;
+    font-family: 'So:hne Breit Fett';
+    COLOR: #FFF;
+}
+
+.new-collection .col-text p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'So:hne Breit';
+    margin-bottom: 20px;
+}
+
+.new-collection .col-text  a.btn-primary.btn {
+    background: #fff;
+    padding: 15px 35px;
+    font-size: 16px;
+    color: #181717;
+    border-radius: 50px;
+    font-family: 'So:hne Breit Kra:ftig';
+    margin-top: 20px;
+    display: inline-block;
 }

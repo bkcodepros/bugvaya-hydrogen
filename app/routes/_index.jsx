@@ -8,6 +8,7 @@ import ImageAccordionSection from '~/components/ImageAccordionSection';
 import NewCollectionSection from '~/components/NewCollectionSection';
 import ProductHighlight from '~/components/ProductHighlight';
 import ProductHighlightSection from '~/components/ProductHighlightSection';
+import BotenicalSkincare from '~/components/BotenicalSkincare';
 /**
  * @type {MetaFunction}
  */
@@ -78,8 +79,8 @@ export default function Homepage() {
       <NewCollectionSection />
       <Testimonials />
       <ImageAccordionSection />
+      <BotenicalSkincare />
       <FeaturedCollection collection={data.featuredCollection} />
-      <RecommendedProducts products={data.recommendedProducts} />
     </div>
   );
 }

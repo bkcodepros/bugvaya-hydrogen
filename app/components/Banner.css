@@ -42,3 +42,9 @@ body > main {
     font-size: 16px;
     font-family: 'So:hne Breit';
 }
+.banner-hme .text-center a svg {
+    width: 30px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+}

@@ -28,7 +28,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-white py-12 px-4 md:px-12 testimonials">
+    <div className="container">  <section className="bg-white py-12 px-4 md:px-12 testimonials">
       <h2 className="text-3xl font-bold mb-8">Customer Reviews</h2>
       <div className="grid testimonials-wrap grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((item, index) => (
@@ -36,7 +36,7 @@ export default function Testimonials() {
             key={index}
             className="bg-gray-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
           >
-            <div className="flex items-center mb-4 gap-3">
+            <div className="testi-head">
               <img
                 src={item.image}
                 alt={item.name}
@@ -59,6 +59,7 @@ export default function Testimonials() {
           </div>
         ))}
       </div>
-    </section>
+    </section></div>
+  
   );
 }

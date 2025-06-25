@@ -9,21 +9,29 @@ export default function ImageAccordionSection() {
 
   const items = [
     {
-      title: 'Accordion Item 1',
-      content: 'This is the content of the first accordion item.',
+      title: 'What is the return policy for beauty products?',
+      content: 'We accept returns within 30 days for unopened and unused products. Contact our support team for assistance.',
     },
     {
-      title: 'Accordion Item 2',
+      title: 'Are your cosmetics cruelty-free?',
       content: 'Here is some more information for item 2.',
     },
     {
-      title: 'Accordion Item 3',
+      title: 'How do I find the right foundation shade?',
+      content: 'More content for item 3 goes here.',
+    },
+    {
+      title: 'Can I use your skincare products on sensitive skin?',
+      content: 'More content for item 3 goes here.',
+    },
+    {
+      title: 'Are your products vegan?',
       content: 'More content for item 3 goes here.',
     },
   ];
 
   return (
-    <section className="image-accordion-section">
+    <div className="container"><section className="image-accordion-section">
       <div className="left-image">
         <img src="https://cdn.shopify.com/s/files/1/0691/3025/6522/files/faq.png" alt="Sample" />
       </div>
@@ -43,6 +51,7 @@ export default function ImageAccordionSection() {
           </div>
         ))}
       </div>
-    </section>
+    </section></div>
+    
   );
 }
