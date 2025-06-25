@@ -10,8 +10,8 @@ export default function Banner() {
       }}
     >
       <div className="max-w-4xl mx-auto text-center bg-black/50 p-8 rounded-lg">
-        <h1 className="text-5xl font-bold mb-4">Welcome to Our Store</h1>
-        <p className="text-lg mb-6">Explore our latest collection and enjoy great deals.</p>
+        <h1 className="text-5xl font-bold mb-4">Tell That <br />Bug - Vaya</h1>
+        <p className="text-lg mb-6">with our bug repellent that’s natural and designed to protect — without cramping your style.</p>
         <a
           href="/collections/all"
           className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition"

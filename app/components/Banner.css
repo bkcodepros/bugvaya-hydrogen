@@ -1,8 +1,11 @@
 .banner-hme {
     
-    padding: 300px 50px;
+    padding: 600px 50px 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 30px;
 }
 .container {
     margin: 0 auto;
@@ -10,4 +13,32 @@
     padding: 0 50px;
     width: 100%;
     box-sizing: border-box;
+}
+body > main {
+    margin: 0;
+}
+.banner-hme .text-center {
+    max-width: 40%;
+}
+
+.banner-hme .text-center h1 {
+    font-size: 64px;
+    font-family: 'So:hne Breit Fett';
+    color: #fff;
+}
+
+.banner-hme .text-center p.text-lg {
+    font-size: 18px;
+    font-family: 'So:hne Breit Kra:ftig';
+    color: #fff;
+}
+
+.banner-hme .text-center a {
+    border-radius: 50px;
+    background: #fff;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'So:hne Breit';
 }

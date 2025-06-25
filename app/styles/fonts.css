@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'So:hne Breit Fett';
+    src: url('/fonts/SohneBreit-Fett.woff2') format('woff2'),
+        url('/fonts/SohneBreit-Fett.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'So:hne Breit';
+    src: url('/fonts/SohneBreit-Buch.woff2') format('woff2'),
+        url('/fonts/SohneBreit-Buch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'So:hne Breit Kra:ftig';
+    src: url('/fonts/SohneBreit-Kraftig.woff2') format('woff2'),
+        url('/fonts/SohneBreit-Kraftig.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

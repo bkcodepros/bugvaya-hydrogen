@@ -12,6 +12,7 @@
     border-radius: 10px;
     margin-top: 10px;
     font-size: 16px;
+    font-family: 'So:hne Breit';
 }
 .promo-bnr {
     padding: 15px;
@@ -32,4 +33,27 @@ header.header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.header-ctas{margin-left:inherit;}
+.header-menu-desktop{margin-left:20px}
+.header-menu-desktop a.header-menu-item {
+    font-size: 18px;
+    color: #fff !important;
+    font-family: 'So:hne Breit';
+}
+.header-menu-desktop a.header-menu-item.active {color:#ABCAE9; font-weight: 400 !important;}
+nav.header-ctas button, .header-ctas a, nav.header-ctas button h3 {
+    color: #fff !important;
+}
+.header > a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -123px;
+}
+
+.header > a img {
+    margin: 0 auto;
 }

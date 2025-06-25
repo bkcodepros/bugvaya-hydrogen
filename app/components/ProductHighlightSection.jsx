@@ -1,34 +1,54 @@
-// app/components/ProductHighlightSection.jsx
-import {Link} from '@remix-run/react';
-import {Image} from '@shopify/hydrogen';
+// app/components/FeaturedDeals.jsx
+import './ProductHighlightSection.css'; // basic styles
 
-export default function ProductHighlightSection({products}) {
+export default function FeaturedDeals() {
+  const cards = [
+    {
+      title: 'GET THE GLOW',
+      image: '/images/prd1.png',
+      originalPrice: '$18.04',
+      salePrice: '$10.67',
+      href: '/collections/glow-deals',
+      colorClass: 'card1',
+    },
+    {
+      title: 'ESSENTIAL PRICES',
+      image: '/images/prd2.png',
+      originalPrice: '$18.04',
+      salePrice: '$10.67',
+      href: '/collections/essential-prices',
+      colorClass: 'card2',
+    },
+    {
+      title: 'SUMMER SALE',
+      image: '/images/prd3.png',
+      originalPrice: '$18.04',
+      salePrice: '$10.67',
+      href: '/collections/summer-sale',
+      colorClass: 'card3',
+    },
+  ];
+
   return (
-    <section className="product-highlights">
-      <h2 className="section-title">NEW</h2>
-      <div className="highlight-grid">
-        {products.map((product) => (
-          <div key={product.id} className="highlight-product">
-            <Link to={`/products/${product.handle}`}>
-              {product.featuredImage && (
-                <Image
-                  data={product.featuredImage}
-                  alt={product.featuredImage.altText || product.title}
-                  width={300}
-                  height={300}
-                />
-              )}
-              <h3>{product.title}</h3>
-              <div className="price">
-                <span className="original-price">${product.priceRange.minVariantPrice.amount}</span>
-                {product.compareAtPrice && (
-                  <span className="compare-price">${product.compareAtPrice}</span>
-                )}
-              </div>
-            </Link>
+    <div class="container">
+    <section className="deal-section">
+      
+      {cards.map((item, idx) => (
+        <a href={item.href}  aria-label={`View ${item.title}`}>
+        <div key={idx} className={`deal-card ${item.colorClass}`}>
+          <span className="deal-badge">NEW</span>
+          <img src={item.image} alt={item.title} className="deal-image" />
+          <div className="deal-info">
+            <h3>{item.title}</h3>
+            <p className="deal-price">
+              <s>{item.originalPrice}</s> – <span>{item.salePrice}</span>
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+        </a>
+      ))}
+      
     </section>
+    </div>
   );
 }

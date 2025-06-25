@@ -1,0 +1,163 @@
+.highlightSection {
+  padding: 4rem 0rem;
+  background: #fff;
+  text-align: center;
+}
+
+.container-prd {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding:0 50px;
+}
+
+.infoBox {
+  background-color: #f2f8ff;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5b9eff;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.pricingBox {
+  background: #f0f3f7;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.radioRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 0.75rem;
+  color: green;
+  margin-left: 0.5rem;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.select {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.features {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin: 0.4rem 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.addToCart {
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.buyNow {
+  width: 100%;
+  padding: 0.75rem;
+  background: black;
+  color: white;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.imageBox {
+  background-color: #f2f8ff;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox img {
+  max-height: 400px;
+  width: auto;
+}
+
+.note {
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 0.9rem;
+  background: #f2f8ff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.viewAll {
+  margin-top: 1.5rem;
+}
+
+.viewAll a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.viewAll a:hover {
+  background: black;
+  color: white;
+}

@@ -5,6 +5,9 @@ import {ProductItem} from '~/components/ProductItem';
 import Banner from '~/components/Banner';
 import Testimonials from '~/components/Testimonials';
 import ImageAccordionSection from '~/components/ImageAccordionSection';
+import NewCollectionSection from '~/components/NewCollectionSection';
+import ProductHighlight from '~/components/ProductHighlight';
+import ProductHighlightSection from '~/components/ProductHighlightSection';
 /**
  * @type {MetaFunction}
  */
@@ -70,10 +73,9 @@ export default function Homepage() {
   return (
     <div className="home">
       <Banner/>
-       <div className="bg-yellow-100 text-2xl font-bold p-4">
-      🎉 Tailwind is working!
-    </div>
-    
+      <ProductHighlightSection />
+      <ProductHighlight />
+      <NewCollectionSection />
       <Testimonials />
       <ImageAccordionSection />
       <FeaturedCollection collection={data.featuredCollection} />
