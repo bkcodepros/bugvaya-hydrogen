@@ -3,7 +3,11 @@
   background: #fff;
   text-align: center;
 }
-
+.highlightSection h2 {
+    font-size: 48px;
+    font-family: 'So:hne Breit Fett';
+    color: #000;
+}
 .container-prd {
   max-width: 100%;
   margin: 0 auto;

@@ -4,8 +4,10 @@ import productImage from '/public/images/product-mockup.png'; // adjust path if 
 export default function ProductHighlight() {
   return (
     <section className="highlightSection">
-        <h2>The Most selling Products</h2>
+        <h2>The Most selling Product</h2>
+         
       <div className="container-prd">
+       <div className="high-wrap">
         {/* Left Side - Product Info */}
         <div className="infoBox">
           <div className="label">50 ML | GLASS BOTTLE</div>
@@ -55,18 +57,19 @@ export default function ProductHighlight() {
 
           <button className="buyNow">Buy It Now</button>
         </div>
-
         {/* Right Side - Image */}
         <div className="imageBox">
           <img src={productImage} alt="Product" />
-        </div>
-      </div>
-
-      {/* Bottom Note */}
-      <div className="note">
+          <div className="note">
         <strong>Also available in Gentle Formula:</strong> Designed for sensitive skin and delicate noses — same scent, lighter touch.
       </div>
-
+        </div>
+      
+      
+      {/* Bottom Note */}
+      
+     </div>
+         </div> 
       {/* View All Button */}
       <div className="viewAll">
         <a href="/products">VIEW ALL PRODUCTS →</a>
