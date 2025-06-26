@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductHighlight.css';
-import productImage from '/public/images/product-mockup.png'; // adjust path if needed
+import productImage from '/images/product-mockup.png'; // adjust path if needed
 export default function ProductHighlight() {
   return (
     <section className="highlightSection">
