@@ -521,8 +521,85 @@ button.reset:hover:not(:has(> *)) {
   display: inline-block;
 }
 
+/******************************Header*******************************/
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.promo-bnr {
+    padding: 15px;
+    text-align: center;
+    background: #ABCAE9;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'So:hne Breit';
+}
+.promo-bnr {
+    padding: 15px;
+    text-align: center;
+    background: #ABCAE9;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
 
+header.header {
+    position: relative;
+    width: 100%;
+    top: 65px;
+    box-sizing: border-box;
+    background: transparent;
+    margin-top: -45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-ctas{margin-left:inherit;}
+.header-menu-desktop{margin-left:20px}
+.header-menu-desktop a.header-menu-item {
+    font-size: 18px;
+    color: #fff !important;
+    font-family: 'So:hne Breit';
+}
+.header-menu-desktop a.header-menu-item.active {color:#ABCAE9; font-weight: 400 !important;}
+nav.header-ctas button, .header-ctas a, nav.header-ctas button h3 {
+    color: #fff !important;
+}
+.header > a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -123px;
+}
 
+.header > a img {
+    margin: 0 auto;
+}
+
+body.about header.header {
+    margin-top: 0;
+    top: 15px;
+    background: #F6EBBE;
+    border-radius:15px;
+}
+
+body.about .header-menu-desktop a.header-menu-item {
+    color: #001F3F !important;
+}
+
+.about nav.header-ctas button, .about .header-ctas a, .about nav.header-ctas button h3 {
+    color: #000 !important;
+}
+
+.about .header > a img {
+    filter: invert(0.8);
+}
 /***********************Footer Css********************/
 .footer {
       background: #c7e0f5;

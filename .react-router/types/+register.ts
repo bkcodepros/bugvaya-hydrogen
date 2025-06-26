@@ -61,6 +61,7 @@ type Params = {
     "*": string;
   };
   "/search": {};
+  "/about": {};
   "/cart": {};
   "/cart/:lines": {
     "lines": string;

@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
   useRouteLoaderData,
+  useLocation,
 } from 'react-router';
 import favicon from '~/assets/favicon.svg';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
@@ -147,7 +148,16 @@ export function Layout({children}) {
   const nonce = useNonce();
   /** @type {RootLoader} */
   const data = useRouteLoaderData('root');
+let location = useLocation();
 
+  // strip leading “/”, default to “home” if root,
+  // remove any leftover hyphens/slashes so you get e.g. “about” or “products”
+  let pageClass = location.pathname === '/'
+    ? 'home'
+    : location.pathname
+        .slice(1)          // remove leading slash
+        .replace(/[-\/]/g, '') // strip out hyphens or further slashes
+        .toLowerCase();
   return (
     <html lang="en">
       <head>
@@ -158,7 +168,7 @@ export function Layout({children}) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className={pageClass}>
         {data ? (
           <Analytics.Provider
             cart={data.cart}
