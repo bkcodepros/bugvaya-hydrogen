@@ -75,12 +75,12 @@ export default function Homepage() {
     <div className="home">
       <Banner/>
       <ProductHighlightSection />
-      {/* <ProductHighlight />
+      <ProductHighlight />
       <NewCollectionSection />
       <Testimonials />
       <ImageAccordionSection />
       <BotenicalSkincare />
-      <FeaturedCollection collection={data.featuredCollection} /> */}
+      <FeaturedCollection collection={data.featuredCollection} />
     </div>
   );
 }
