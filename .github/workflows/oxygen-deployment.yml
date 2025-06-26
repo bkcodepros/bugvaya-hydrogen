@@ -26,6 +26,6 @@ jobs:
         run: npm run build
 
       - name: Oxygen deployment
-        uses: Shopify/oxygenctl-action@v1
+        uses: Shopify/oxygenctl-action@v2
         with:
           oxygen_token: ${{ secrets.OXYGEN_DEPLOYMENT_TOKEN }}
