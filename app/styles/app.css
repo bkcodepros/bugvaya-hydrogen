@@ -582,22 +582,29 @@ nav.header-ctas button, .header-ctas a, nav.header-ctas button h3 {
     margin: 0 auto;
 }
 
-body.about header.header {
+body.about header.header, .faq header.header,
+.contact header.header{
     margin-top: 0;
     top: 15px;
     background: #F6EBBE;
     border-radius:15px;
 }
 
-body.about .header-menu-desktop a.header-menu-item {
+body.about .header-menu-desktop a.header-menu-item,
+body.faq .header-menu-desktop a.header-menu-item,
+.contact .header-menu-desktop a.header-menu-item {
     color: #001F3F !important;
 }
 
-.about nav.header-ctas button, .about .header-ctas a, .about nav.header-ctas button h3 {
+.about nav.header-ctas button, .about .header-ctas a, .about nav.header-ctas button h3,
+.faq nav.header-ctas button, .faq .header-ctas a, .faq nav.header-ctas button h3,
+.contact nav.header-ctas button, .contact .header-ctas a, .contact nav.header-ctas button h3  {
     color: #000 !important;
 }
 
-.about .header > a img {
+.about .header > a img,
+.faq .header > a img,
+.contact .header > a img{
     filter: invert(0.8);
 }
 /***********************Footer Css********************/
@@ -672,4 +679,13 @@ body.about .header-menu-desktop a.header-menu-item {
     font-family: 'So:hne Breit';
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.1);
+}
+.footer-col h4:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background: #000;
+    bottom: 0;
+    left: 0;
 }

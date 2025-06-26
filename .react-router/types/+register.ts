@@ -60,12 +60,14 @@ type Params = {
   "/account/*": {
     "*": string;
   };
+  "/contact": {};
   "/search": {};
   "/about": {};
   "/cart": {};
   "/cart/:lines": {
     "lines": string;
   };
+  "/faq": {};
   "/*": {
     "*": string;
   };

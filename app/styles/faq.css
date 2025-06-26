@@ -1,0 +1,140 @@
+.faq-page {
+  padding: 40px 35px;
+  font-family: Arial, sans-serif;
+}
+.faq-bnr {
+    background: url(/images/faq-bnr.png);
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 30px;
+}
+
+.faq-bnr .breadcrumb ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.faq-bnr .breadcrumb ul li {
+    font-size: 16px;
+    color: #181717;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+.faq-title {
+  font-size: 42px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #181717;
+    font-family: 'So:hne Breit Fett';
+}
+
+.faq-container {
+  display: flex;
+  gap: 40px;
+  margin:40px 0;
+  align-items: flex-start;
+}
+
+.faq-sidebar {
+  width: 100%;
+    max-width: 580px;
+    background: #F5F5F5;
+    padding: 40px;
+    border-radius: 30px;
+}
+.faq-sidebar h3 {
+    font-size: 32px;
+    font-family: 'So:hne Breit Fett';
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 15px;
+    margin: 0 0 15px;
+}
+
+.faq-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-sidebar li {
+  margin-bottom: 12px;
+    font-size: 30px;
+    color: #666;
+    font-family: 'So:hne Breit Fett';
+}
+
+.faq-sidebar a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.faq-content {
+  flex: 1;
+}
+
+.faq-content section {
+  margin-bottom: 40px;
+  padding:0;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+    
+}
+
+.faq-question {
+  width: 100%;
+    background: transparent;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid #CED3D9;
+    border-radius: 6px;
+    background: #CED3D9;
+   font-family: 'So:hne Breit Kra:ftig';
+}
+
+.faq-answer {
+    padding: 30PX;
+    background: #F5F5F5;
+    border-top: none;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #666;
+    font-family: 'So:hne Breit';
+}
+.faq-content h2 {
+    color: #181717;
+    font-size: 42px;
+    font-family: 'So:hne Breit Fett';
+    margin-top: 0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+span.toggle-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #000;
+    background: #000;
+}
+
+span.toggle-icon span {
+    color: #fff;
+    font-family: 'So:hne Breit Kra:ftig';
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+}

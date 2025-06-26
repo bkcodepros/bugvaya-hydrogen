@@ -280,3 +280,6 @@
     margin: 0;
     font-family: 'So:hne Breit';
 }
+.about .board-section + .container {
+    padding: 0;
+}

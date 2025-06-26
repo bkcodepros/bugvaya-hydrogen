@@ -1,4 +1,5 @@
 import styles from '../styles/about.css?url';
+import Testimonials from '~/components/Testimonials';
 export const links = () => {
   return [{ rel: 'stylesheet', href: styles }];
 };
@@ -121,6 +122,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <Testimonials />
     </div>
   );
 }
