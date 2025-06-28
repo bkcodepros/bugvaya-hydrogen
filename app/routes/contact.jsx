@@ -162,8 +162,10 @@ export default function Contact() {
       </form>
 
       <section className="contact-info">
-        <h2>We are always happy to assist you</h2>
+        
+        
         <div className="info-columns">
+          <div class="always-assist"><h5>Contact Info</h5><h2>We are always happy to assist you</h2></div>
           <div>
             <h3>Email Address</h3>
             <p>help@info.com</p>

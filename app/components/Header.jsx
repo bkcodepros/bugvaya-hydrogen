@@ -8,7 +8,7 @@ import {useAside} from '~/components/Aside';
 export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   const {shop, menu} = header;
   return (
-    <><div class="container mx-auto px-40"><div class="promo-bnr">Free Standard shipping on us orders $35+ <a href="#">Learn More</a></div>
+    <><div className="container mx-auto px-40"><div className="promo-bnr">Free Standard shipping on us orders $35+ <a href="#">Learn More</a></div>
     <header className="header">
       
       <HeaderMenu
@@ -180,7 +180,7 @@ const FALLBACK_HEADER_MENU = {
       tags: [],
       title: 'Collections',
       type: 'HTTP',
-      url: '/collections',
+      url: '/collections/all',
       items: [],
     },
     {
@@ -207,7 +207,7 @@ const FALLBACK_HEADER_MENU = {
       tags: [],
       title: 'About',
       type: 'PAGE',
-      url: '/about',
+      url: '/pages/about',
       items: [],
     },
   ],
@@ -238,3 +238,4 @@ function activeLinkStyle({isActive, isPending}) {
 /** @typedef {import('@shopify/hydrogen').CartViewPayload} CartViewPayload */
 /** @typedef {import('storefrontapi.generated').HeaderQuery} HeaderQuery */
 /** @typedef {import('storefrontapi.generated').CartApiQueryFragment} CartApiQueryFragment */
+ 

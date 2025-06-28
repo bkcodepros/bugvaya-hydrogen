@@ -522,6 +522,31 @@ button.reset:hover:not(:has(> *)) {
 }
 
 /******************************Header*******************************/
+.faq-bnr {
+    background: url(/images/faq-bnr.png);
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 30px;
+}
+
+.faq-bnr .breadcrumb ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.faq-bnr .breadcrumb ul li {
+    font-size: 16px;
+    color: #181717;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+.faq-title {
+  font-size: 42px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #181717;
+    font-family: 'So:hne Breit Fett';
+}
 .container {
     margin: 0 auto;
     max-width: 100%;
@@ -550,26 +575,24 @@ button.reset:hover:not(:has(> *)) {
 header.header {
     position: relative;
     width: 100%;
-    top: 65px;
     box-sizing: border-box;
-    background: transparent;
-    margin-top: -45px;
-    display: flex;
+   display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.home header.header {top: 65px; margin-top: -45px; background: transparent;}
 .header-ctas{margin-left:inherit;}
 .header-menu-desktop{margin-left:20px}
 .header-menu-desktop a.header-menu-item {
     font-size: 18px;
-    color: #fff !important;
     font-family: 'So:hne Breit';
 }
+.home .header-menu-desktop a.header-menu-item {color: #fff !important;}
 .header-menu-desktop a.header-menu-item.active {color:#ABCAE9; font-weight: 400 !important;}
-nav.header-ctas button, .header-ctas a, nav.header-ctas button h3 {
+.home nav.header-ctas button, .home .header-ctas a, .home nav.header-ctas button h3 {
     color: #fff !important;
 }
-.header > a {
+.home .header > a {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -578,33 +601,27 @@ nav.header-ctas button, .header-ctas a, nav.header-ctas button h3 {
     margin-left: -123px;
 }
 
-.header > a img {
+.home .header > a img {
     margin: 0 auto;
+    filter: invert(0);
 }
 
-body.about header.header, .faq header.header,
-.contact header.header{
+header.header{
     margin-top: 0;
     top: 15px;
     background: #F6EBBE;
     border-radius:15px;
 }
 
-body.about .header-menu-desktop a.header-menu-item,
-body.faq .header-menu-desktop a.header-menu-item,
-.contact .header-menu-desktop a.header-menu-item {
+.header-menu-desktop a.header-menu-item {
     color: #001F3F !important;
 }
 
-.about nav.header-ctas button, .about .header-ctas a, .about nav.header-ctas button h3,
-.faq nav.header-ctas button, .faq .header-ctas a, .faq nav.header-ctas button h3,
-.contact nav.header-ctas button, .contact .header-ctas a, .contact nav.header-ctas button h3  {
+nav.header-ctas button, .header-ctas a, nav.header-ctas button h3  {
     color: #000 !important;
 }
 
-.about .header > a img,
-.faq .header > a img,
-.contact .header > a img{
+.header > a img{
     filter: invert(0.8);
 }
 /***********************Footer Css********************/
@@ -688,4 +705,43 @@ body.faq .header-menu-desktop a.header-menu-item,
     background: #000;
     bottom: 0;
     left: 0;
+}
+
+/****************Collection Page**************/
+.collectionsall main {
+    margin: 0 0 1rem;
+}
+
+.collectionsall .faq-bnr {
+    margin: 40px 0 40px;
+}
+.product-item img{height: 500px;
+    max-width: 432px;
+    border-radius: 30px;}
+ .product-item small {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    font-family: 'So:hne Breit Kra:ftig';
+}   
+.product-item h4 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'So:hne Breit Kra:ftig';
+    font-weight: inherit;
+}
+.collectionsall .products-grid + a {
+    text-align: center;
+    margin-left: -105px;
+    display: inline-block;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'So:hne Breit Kra:ftig';
+    text-transform: capitalize;
+    border-radius: 50px;
+    padding: 15px 40px;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
 }

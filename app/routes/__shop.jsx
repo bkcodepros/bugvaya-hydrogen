@@ -53,14 +53,13 @@ function loadDeferredData({context}) {
   return {};
 }
 
-export default function Collection() {
+export default function Shop() {
   /** @type {LoaderReturnData} */
   const {products} = useLoaderData();
 
   return (
     <div className="collection">
-      <div class="container">
-        <div class="faq-bnr"> <h1 className="faq-title">Shop</h1> <div class="breadcrumb"><ul><li>Home</li><li>&bull;</li><li>Shop</li></ul></div></div> 
+      <h1>Products</h1>
       <PaginatedResourceSection
         connection={products}
         resourcesClassName="products-grid"
@@ -72,8 +71,7 @@ export default function Collection() {
             loading={index < 8 ? 'eager' : undefined}
           />
         )}
-      </PaginatedResourceSection></div>
-      
+      </PaginatedResourceSection>
     </div>
   );
 }
