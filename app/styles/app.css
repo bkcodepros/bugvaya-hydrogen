@@ -424,13 +424,13 @@ button.reset:hover:not(:has(> *)) {
 * routes/products.$handle.tsx
 * --------------------------------------------------
 */
-.product {
+/* .product {
   display: grid;
   @media (min-width: 45em) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
   }
-}
+} */
 
 .product h1 {
   margin-top: 0;
@@ -744,4 +744,273 @@ nav.header-ctas button, .header-ctas a, nav.header-ctas button h3  {
     flex-wrap: wrap;
     position: relative;
     left: 50%;
+}
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: end;
+  font-family: 'So:hne Breit Kra:ftig';
+}
+
+.sort-bar select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border:1px solid #D9D9D9;
+  font-family: 'So:hne Breit';
+}
+
+/****************Product Page************/
+
+.product .container {
+    padding: 0 35px;
+}
+.prd-main-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100;
+    gap:50px;
+    box-sizing:border-box;
+    padding:50px 0;
+}
+
+.prd-main-wrap .product-image {
+    width: 48%;
+}
+
+.prd-main-wrap .product-main {
+    width: 49%;
+}
+
+.prd-main-wrap .product-image img {
+    border-radius: 30px;
+}
+
+.prd-main-wrap .product-main  h1 {
+    font-size: 48px;
+    font-family: 'So:hne Breit Fett';
+    color: #181717;
+}
+
+.prd-main-wrap .product-main .product-price {
+    font-size: 24px;
+    font-family: 'So:hne Breit Kra:ftig';
+    color: #181717;
+}
+.product-tabs .tab-buttons button {
+    color: #181717;
+    font-size: 24px;
+    font-family: 'So:hne Breit Kra:ftig';
+    border: none;
+    background: none;
+    padding: 15px 15px;
+}
+
+.product-tabs {
+    padding: 20px 0;
+}
+
+.product-tabs .tab-buttons button.active {
+    border-bottom: 5px solid #181717;
+}
+
+.tab-buttons {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #181717;
+}
+
+.product-tabs .tab-content div {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    font-family: 'So:hne Breit Kra:ftig';
+}
+.product-form button[type="submit"] {
+    background: #181717;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'So:hne Breit';
+}
+
+.Product-extra-info {
+    margin-top: 30px;
+}
+
+.Product-extra-info ul {
+    padding: 0;
+    margin: 0;
+}
+
+.Product-extra-info ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #666666;
+    font-family: 'So:hne Breit';
+    margin-bottom: 10px;
+}
+
+.Product-extra-info ul li span.icn {
+    margin-right: 8px;
+    margin-bottom: 0;
+    line-height: 15px;
+}
+
+.product-extras {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 0px 0px;
+  font-family: Arial, sans-serif;
+
+
+.product-block {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0px;
+        gap: 30px;
+        flex: 1;
+        align-items: stretch;
+}
+
+.product-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.product-text {
+          background: #F5F5F5;
+        flex-wrap: wrap;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 30px;
+}
+
+.product-text h2 {
+  font-size: 48px;
+        margin-bottom: 15px;
+        font-family: 'So:hne Breit Fett';
+}
+.product-text h4 {
+    font-size: 24px;
+    color: #666;
+    font-family: 'So:hne Breit Kra:ftig';
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.product-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-text ul li {
+  margin-bottom: 20px;
+        border-bottom: 1px solid #D9D9D9;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000;
+        font-family: 'So:hne Breit';
+        padding-bottom: 20px;
+}
+.product-text ul li strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'So:hne Breit Fett';
+}
+.product-text ul li ul li {
+    border-bottom: 1px solid transparent !important;
+    padding-bottom: 0 !important;
+    line-height: 15px !important;
+    list-style: disc;
+    list-style: inside;
+}
+.product-block.face-spry {
+    background: #f5f5f5;
+    border-radius: 30px;
+    padding: 30px 30px 20px;
+    margin-top: 40px;
+}
+.product-block.abt {
+    background: rgba(171, 202, 233, .2);
+    padding: 0;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+.product-block.abt .product-text {
+    background: transparent;
+}
+.product-block.abt .product-text p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #181717;
+    margin-bottom: 20px;
+    font-family: 'So:hne Breit';
+}
+.product-text h2 img {
+    width: 250px;
+}
+.product-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 30px;
+  display: block;
+}
+
+.video-section {
+  position: relative;
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+}
+.video-section .video-overlay h2 {
+          color: #fff;
+        text-align: center;
+        margin: 20px 0 0;
+        font-size: 60px;
+        font-family: 'So:hne Breit Fett';
+}
+
+.video-section .video-overlay {
+    display: block;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+}
+.video-section .video-overlay .video-button {
+  position: relative;
+        width: 65px;
+        margin: 0 auto;
+}
+}
+.product-extras + .container {
+    padding: 0;
+}
+.recommended-products h2 {
+    font-size: 48px;
+    color: #181717;
+    font-family: 'So:hne Breit Fett';
+}
+
+.recommended-products {
+    margin-top: 10px;
 }

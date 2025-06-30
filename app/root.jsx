@@ -16,6 +16,7 @@ import resetStyles from '~/styles/reset.css?url';
 import appStyles from '~/styles/app.css?url';
 import {PageLayout} from './components/PageLayout';
 import './styles/fonts.css';
+import './styles/responsive.css';
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations

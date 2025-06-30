@@ -80,7 +80,8 @@ export default function Homepage() {
       <Testimonials />
       <ImageAccordionSection />
       <BotenicalSkincare />
-      <FeaturedCollection collection={data.featuredCollection} />
+      {/*<FeaturedCollection collection={data.featuredCollection} />
+      <RecommendedProducts products={data.recommendedProducts} />*/}
     </div>
   );
 }
