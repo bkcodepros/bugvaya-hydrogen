@@ -43,7 +43,7 @@ export function Footer({footer: footerPromise, header, publicStoreDomain}) {
           <div className="footer-col">
             <h4>Social</h4>
             <ul>
-              <li><a href="#"><img src="/images/Instagram .svg"  alt="Instagram" /> Instagram</a></li>
+              <li><a href="#"><img src="/images/Instagram.svg"  alt="Instagram" /> Instagram</a></li>
               <li><a href="#"><img src="/images/YouTube.svg"  alt="Youtube" /> YouTube</a></li>
               <li><a href="#"><img src="/images/TikTok.svg"  alt="TikTok" /> TikTok</a></li>
               <li>
