@@ -74,7 +74,7 @@ export default function ProductHighlight() {
          </div> 
       {/* View All Button */}
       <div className="viewAll">
-        <a href="/products">VIEW ALL PRODUCTS <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+        <a href="/collections/all">VIEW ALL PRODUCTS <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
 <path d="M9.25 21.25L21.75 8.75" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M9.25 8.75H21.75V21.25" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a>

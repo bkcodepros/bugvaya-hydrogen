@@ -78,6 +78,7 @@ export default function Collection() {
 
   return (
     <div className="collection">
+      <div className="container">
       <h1>{collection.title}</h1>
       <p className="collection-description">{collection.description}</p>
       <PaginatedResourceSection
@@ -100,6 +101,7 @@ export default function Collection() {
           },
         }}
       />
+      </div>
     </div>
   );
 }

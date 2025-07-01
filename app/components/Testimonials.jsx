@@ -25,12 +25,16 @@ export default function Testimonials() {
       stars: 5,
       image: 'https://cdn.shopify.com/s/files/1/0691/3025/6522/files/testi3.png',
     },
+    
   ];
 
+
   return (
-    <div className="container">  <section className="bg-white py-12 px-4 md:px-12 testimonials">
+    <div className="container">  
+    <section className="bg-white py-12 px-4 md:px-12 testimonials">
       <h2 className="text-3xl font-bold mb-8">Customer Reviews</h2>
-      <div className="grid testimonials-wrap grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid testimonials-wrap">
+        
         {testimonials.map((item, index) => (
           <div
             key={index}
@@ -58,8 +62,10 @@ export default function Testimonials() {
             </div>
           </div>
         ))}
+        
       </div>
-    </section></div>
+    </section>
+    </div>
   
   );
 }

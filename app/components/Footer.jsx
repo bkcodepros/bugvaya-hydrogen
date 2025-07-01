@@ -22,8 +22,8 @@ export function Footer({footer: footerPromise, header, publicStoreDomain}) {
           <div className="footer-col">
             <h4>Navigate</h4>
             <ul>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Our Story</a></li>
+              <li><a href="/collections/all">Shop</a></li>
+              <li><a href="/about">Our Story</a></li>
               <li><a href="#">Bugvaya Futures</a></li>
               <li><a href="#">Impact</a></li>
               <li><a href="#">BLOG</a></li>
@@ -35,8 +35,8 @@ export function Footer({footer: footerPromise, header, publicStoreDomain}) {
               <li><a href="#">Privacy</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Accessibility</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact</a></li>
               <li><a href="#">Events</a></li>
             </ul>
           </div>

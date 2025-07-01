@@ -14,7 +14,7 @@ export default function SimpleHeroSection() {
           We sustainably and ethically source our ingredients, to create clean and sustainable products
         </p>
         <a
-          href="/shop"
+          href="/collections/all"
           className="btn-primary btn"
         >
           Shop New Collection
