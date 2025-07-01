@@ -27,14 +27,16 @@ export async function loader(args) {
  * @param {LoaderFunctionArgs}
  */
 async function loadCriticalData({context, request, params}) {
-  if (!params.handle) {
-    throw new Error('Missing page handle');
-  }
-
+  const cleanHandle = params.handle?.replace(/^pages\//, '').replace(/^\/+/, '');
+  if (!cleanHandle) throw new Error('Missing or invalid handle');
+  {/* if (!params.handle) { throw new Error('Missing page handle'); } */}
+ console.log('✅ Transformed handle:', cleanHandle);
   const [{page}] = await Promise.all([
     context.storefront.query(PAGE_QUERY, {
       variables: {
         handle: params.handle,
+        language: context.storefront.i18n.language,
+        country: context.storefront.i18n.country,
       },
     }),
     // Add other queries here, so that they are loaded in parallel
@@ -43,8 +45,8 @@ async function loadCriticalData({context, request, params}) {
   if (!page) {
     throw new Response('Not Found', {status: 404});
   }
-
-  redirectIfHandleIsLocalized(request, {handle: params.handle, data: page});
+  redirectIfHandleIsLocalized(request, {handle: cleanHandle, data: page});
+ {/* } redirectIfHandleIsLocalized(request, {handle: params.handle, data: page}); */}
 
   return {
     page,
@@ -70,7 +72,7 @@ export default function Page() {
       <header>
         <h1>{page.title}</h1>
       </header>
-      <main dangerouslySetInnerHTML={{__html: page.body}} />
+      <main dangerouslySetInnerHTML={{__html: page.body}} /> 
     </div>
   );
 }
