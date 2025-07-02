@@ -37,8 +37,8 @@
   .video-section .video-overlay h2{font-size:40px}
   section.video-section { margin-top: 0;}
   .board-section h2{font-size:40px;}
-  .board-member{width:29%;}
-  .board-member h4{font-size:17px;}
+  .board-grid .board-member{width:29%;}
+  .board-grid .board-member h4{font-size:17px;}
   .about .about-container {padding: 0 15px;}
   .brand-section .brnd-desc p{font-size:18px;}
   .hero-section .hero-image {flex: 1 1 30%; max-width: 30%;}
