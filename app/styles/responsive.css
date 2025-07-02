@@ -1,3 +1,102 @@
+@media only screen and ( min-width: 768px ) and ( max-width: 1024px )
+{
+  .highlightSection .container-prd .high-wrap{display:block;}
+  .container .banner-hme{padding: 200px 20px 100px;}
+  .container .banner-hme .text-center {max-width: 100%;}
+  .container .banner-hme .text-center h1{font-size:40px;}
+  .highlightSection h2{font-size:40px;}
+  .infoBox h3.title {font-size: 40px; }
+  .highlightSection .container-prd .high-wrap{padding:20px;}
+  .highlightSection .imageBox img{width:100%; margin-top:20px;}
+  .highlightSection .infoBox{padding-right:0;} 
+  .container section.new-collection{padding: 100px 30px;}
+  .container .new-collection .col-text h2{ font-size: 40px;line-height: 45px;}
+  .container .testimonials h2{font-size: 40px;}
+  .container .testimonials .testimonials-wrap > div{width:100%;}
+  .container .image-accordion-section .left-image {padding-right: 0;}
+  .container .image-accordion-section .right-accordion{padding-left:0; max-width:100%;}
+  .container .image-accordion-section .right-accordion h2{font-size:40px;}
+  .container .botenical-hme{padding:50px 20px;}
+  .container .botenical-hme .botenical-txt h2{font-size:40px; line-height:50px;}
+  .botenical-hme .botenical-txt p{font-size:18px;}
+  .header nav.header-ctas {display: none;}
+  .header nav.header-ctas {display: none;}
+  .header nav.header-menu-desktop {order: 2;}
+  .home .header > a {order: 1;position: relative;left: 0;margin-left: 0;}
+  body .container, body .container-prd{padding:0 30px;}
+  .about-container .hero-section .hero-text{flex: 2 1 235px;
+  .subheading{font-size:12px;} h1{font-size:30px; line-height:35px;}
+  .description{font-size:13px;}
+  a.btn{margin-top:0; font-size: 12px; padding: 15px 25px;}
+  }
+  .info-section{
+    .text-block{width:100%;}
+    .text-block h3{font-size:40px;}
+    .text-block h4{   margin-top: 50px; font-size: 40px;}
+  }
+  .video-section .video-overlay h2{font-size:40px}
+  section.video-section { margin-top: 0;}
+  .board-section h2{font-size:40px;}
+  .board-member{width:29%;}
+  .board-member h4{font-size:17px;}
+  .about-container {padding: 0 15px;}
+  .brand-section .brnd-desc p{font-size:18px;}
+  .hero-section .hero-image {flex: 1 1 30%; max-width: 30%;}
+  .faq .faq-page{ padding: 40px 15px;}
+  .faq .faq-sidebar{max-width:200px; padding:20px;
+    h3{font-size:22px;}
+    li{font-size:20px;}
+  }
+  .faq .faq-content{
+     h2{font-size:30px;}
+     .faq-question{padding:15px 20px; text-align: left;}
+     span.toggle-icon {background:transparent; border:none; text-align: right;}
+    span.toggle-icon span{font-size: 18px; color:#000;}
+    .faq-answer{font-size:16px; padding:20px; }
+  }
+  .contact .contact-container{padding:40px 15px;
+    .get-started h2{font-size: 40px; line-height:40px;}
+    .contact-form{padding:20px;}
+    .field-group label{font-size:18px; line-height: 18px; margin: 0;}
+    .contact-form .field-group{margin-bottom:0; width:100%;}
+    .contact-form .field-group.full-width.captcha label{font-size:14px;}
+    .btn-submit{font-size:18px;}
+    .contact-info{padding:20px;}
+    .always-assist { width: 26%;}
+    .info-columns p{font-size:18px;}
+    .always-assist h2{font-size:25px;}
+    .info-columns small{line-height:26px; font-size:18px;}
+  }
+  .footer-columns .footer-col {width: 46%;}
+  .collection .products-grid {display: flex;flex-wrap: wrap;gap: 15px;
+     a.product-item {width: 48.8%;}
+     a.product-item img {height: auto;} 
+     a.product-item h4 {font-size: 20px;}                       
+  } 
+  .product .container {
+    padding: 0 15px;
+    .prd-main-wrap{gap:25px;
+     .product-image{width:100%;}
+    .product-main{ width: 100%;
+    h1{font-size:40px;margin-bottom: 0;}
+    .product-price{font-size: 20px;}
+    .tab-buttons{display:flex;}
+    .product-tabs .tab-buttons button{ font-size:18px; text-align:left;}
+   } 
+  }
+  .product-extras .product-text h2{font-size:40px;}
+  .product-extras .product-text{width:100%;}
+  .product-extras .video-section .video-overlay h2{font-size:35px;}
+  .product-extras .face-spry .product-text{padding:40px 0; }
+  .container {padding: 0;}
+  .recommended-products h2{font-size:40px;}
+  .recommended-products-grid{grid-template-columns: repeat(2, 1fr);}
+  .recommended-products-grid .product-item img{height:auto;}
+  }
+}
+ 
+
+
 @media only screen and ( max-width: 767px ){
   .container{padding:0 20px !important;}
   .promo-bnr{font-size:12px;}
