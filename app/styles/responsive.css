@@ -1,3 +1,53 @@
+@media only screen and ( max-width: 1440px ){
+  .high-wrap .imageBox img {width: 100%;}
+  .home {
+    .banner-hme{padding: 200px 50px 100px;}
+    .banner-hme .text-center h1{font-size:50px; line-height:55px;}
+    .deal-info h3{font-size:20px;}
+    .deal-price{font-size:16px;}
+    .highlightSection{padding: 2rem 0rem;}
+    .highlightSection h2{font-size:40px;}
+    .infoBox .title{font-size:40px;}
+    .features li{font-size:15px;}
+    input + span{font-size:20px;}
+    .pricingBox span.price {font-size: 20px;}
+    .description + p{font-size:16px;}
+    .viewAll a{font-size:18px;padding: 15px 35px;}
+    .viewAll a svg{width: 22px; height: auto;}
+    section.new-collection{padding: 150px 100px;}
+    .new-collection .col-text h2{font-size: 40px; line-height: 45px;}
+    .image-accordion-section .left-image{padding-right: 0; width: 48%;}
+    .right-accordion{max-width: 48%; padding-left:0;}
+    .image-accordion-section .right-accordion h2{line-height:45px; font-size:40px;}
+    .botenical-hme{padding: 100px 50px; background-size: cover;}
+    .botenical-hme .botenical-txt h2{font-size:40px;}
+    .botenical-hme .botenical-txt p{font-size: 18px;}
+
+  }
+  .about{
+    .about-container {padding: 0 50px;}
+    .hero-section a.btn{font-size:16px;}
+    .brand-section .brnd-desc p{font-size:18px;}
+    .brand-section img{max-width:250px;}
+    .text-block h3{font-size:40px;}
+    .info-image{width:47%;}
+    .text-block h4{margin-top:10px; font-size: 40px;}
+    .video-overlay h2{font-size:40px;}
+    .video-overlay p{font-size:20px;}
+    .board-section h2{font-size: 40px;}
+    .board-member{max-width: 300px;}
+
+  }
+  body .testimonials h2{font-size:40px;}
+  body .testimonials .testimonials-wrap > div .testi-head img{height:80px;}
+  body .testimonials .testimonials-wrap > div .testi-head h4{font-size:22px;}
+  body .testimonials .testimonials-wrap > div .testi-head p.text-gray-500{font-size:16px;}
+  body .testimonials .testimonials-wrap > div h5{font-size:20px;}
+  body .testimonials .testimonials-wrap > div p.text-sm{font-size:18px;}
+  body .testimonials .testimonials-wrap > div{width: calc(33.33% - 20px);padding: 30px 25px;}
+
+}
+
 @media only screen and ( min-width: 768px ) and ( max-width: 1024px )
 {
   .highlightSection .container-prd .high-wrap{display:block;}
@@ -40,7 +90,7 @@
   .board-grid .board-member{width:29%;}
   .board-grid .board-member h4{font-size:17px;}
   .about .about-container {padding: 0 15px;}
-  .brand-section .brnd-desc p{font-size:18px;}
+  .about .brand-section .brnd-desc p{font-size:18px;}
   .hero-section .hero-image {flex: 1 1 30%; max-width: 30%;}
   .faq .faq-page{ padding: 40px 15px;}
   .faq .faq-sidebar{max-width:200px; padding:20px;
