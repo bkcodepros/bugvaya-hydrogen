@@ -190,6 +190,7 @@
   .recommended-products-grid{grid-template-columns: repeat(2, 1fr);}
   .recommended-products-grid .product-item img{height:auto;}
   }
+  header.header.scrolled{width: calc(100% - 60px);}
 }
  
 
@@ -273,6 +274,7 @@ aside main nav a {font-size: 0;}
 .about .about-container{padding:0px 3px;}
 .about-container .hero-text h1{font-size: 30px; line-height: 35px;}
 .hero-section{padding:40px 0;}
+.about .hero-section{padding:40px 10px;}
 .about .hero-section a.btn{margin: 0 15px 0; font-size:15px; padding: 15px 25px; }
 .about .hero-section a.btn svg {height: 18px;}
 .about .hero-section img.hero-image {order: 1;}
@@ -356,4 +358,5 @@ aside main nav a {font-size: 0;}
 .footer-col h4:after{left: 50%; margin-left: -25px;}
 .footer-columns{gap:1rem;}
 .footer-bottom{justify-content:center;}
-}
+header.header.scrolled{width: calc(100% - 40px);}
+} 

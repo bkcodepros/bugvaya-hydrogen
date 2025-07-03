@@ -1021,3 +1021,24 @@ body:not(.home) .header > a {margin-left:-123px; position: absolute; left: 50%;}
 body:not(.home) .header > a svg path {
     fill: #0033A0;
 }
+
+/**************************on scroll fixed header***************/
+header.header.scrolled {
+    position: fixed;
+    background: #F6EBBE;
+    top: 0;
+    margin-top: 0;
+    width: calc(100% - 100px);
+}
+
+header.header.scrolled > a svg path {
+    fill: #0033A0;
+}
+
+header.header.scrolled a.header-menu-item {
+    color: #001F3F !important;
+}
+
+header.header.scrolled nav.header-ctas button, header.header.scrolled .header-ctas a, header.header.scrolled nav.header-ctas button h3 {
+    color: #000 !important;
+}
