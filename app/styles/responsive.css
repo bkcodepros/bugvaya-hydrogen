@@ -25,7 +25,7 @@
 
   }
   .about{
-    .about-container {padding: 0 50px;}
+    .about-container {padding: 0 35px;}
     .hero-section a.btn{font-size:16px;}
     .brand-section .brnd-desc p{font-size:18px;}
     .brand-section img{max-width:250px;}
@@ -38,6 +38,51 @@
     .board-member{max-width: 300px;}
 
   }
+  .faq{
+    .faq-sidebar{max-width:300px;}
+    .faq-sidebar h3{font-size:22px;}
+    .faq-sidebar li{font-size:20px;}
+    .faq-content h2{font-size:35px;}
+    .faq-answer{padding:20px;}
+  }
+  .contact{
+    .get-started h2{font-size:40px; line-height:45px;}
+    .contact-container .lead{font-size:20px; margin-bottom:0px;}
+    .contact-form{padding: 40px 30px;}
+    .contact-form .field-group{width: 48%; margin-bottom: 0;}
+    .field-group label{font-size:20px; line-height:28px;}
+    .contact-form .field-group.full-width.captcha label{font-size:18px;}
+    .btn-submit{font-size:18px;}
+    .contact-info{padding:40px;}
+    .always-assist h2{font-size:35px;line-height: 40px;}
+    .info-columns p{font-size: 20px; margin-bottom: 10px;}
+    .info-columns h3{margin-bottom:0;}
+  }
+  .collection{
+    .product-item img{height:auto;}
+    .product-item h4{font-size:20px;}
+  }
+  .product{
+    .prd-main-wrap{gap:20px;}
+    .prd-main-wrap .product-main h1{font-size:35px; margin-bottom:10px;}
+    .prd-main-wrap .product-main .product-price{font-size:20px;}
+    .product-tabs .tab-buttons button{font-size:18px;}
+    .product-tabs .tab-content div{font-size: 16px; line-height: 26px;}
+    .Product-extra-info ul li{font-size:16px;}
+    .product-extras {
+      .product-text{padding: 30px;}
+      .product-text h2{font-size:35px;}
+      .product-text ul li strong{font-size:20px;}
+      .product-text ul li{ margin-bottom: 10px;font-size: 16px; line-height: 24px; padding-bottom:10px; list-style: none;}
+      .video-section .video-overlay h2{font-size:35px;}
+      .product-text h4{margin-bottom:10px;}
+      .product-block.abt .product-text p{font-size: 16px; line-height: 26px; margin-bottom:10px;}
+    } 
+    .recommended-products h2{font-size:40px;}
+    .product-item img{height:auto;}
+    .product-item h4{font-size:20px;}
+    .product-item small{font-size:16px;}
+  }
   body .testimonials h2{font-size:40px;}
   body .testimonials .testimonials-wrap > div .testi-head img{height:80px;}
   body .testimonials .testimonials-wrap > div .testi-head h4{font-size:22px;}
@@ -45,6 +90,7 @@
   body .testimonials .testimonials-wrap > div h5{font-size:20px;}
   body .testimonials .testimonials-wrap > div p.text-sm{font-size:18px;}
   body .testimonials .testimonials-wrap > div{width: calc(33.33% - 20px);padding: 30px 25px;}
+  body .faq-title{font-size:40px; margin-top: 0;}
 
 }
 
