@@ -1017,3 +1017,7 @@ nav.header-ctas button, .header-ctas a, nav.header-ctas button h3  {
 body[class^="collections"] main {
     margin: 0 0px;
 }
+body:not(.home) .header > a {margin-left:-123px; position: absolute; left: 50%;}
+body:not(.home) .header > a svg path {
+    fill: #0033A0;
+}

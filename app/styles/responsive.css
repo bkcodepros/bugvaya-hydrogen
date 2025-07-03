@@ -119,6 +119,7 @@
   .header nav.header-ctas {display: none;}
   .header nav.header-menu-desktop {order: 2;}
   .home .header > a {order: 1;position: relative;left: 0;margin-left: 0;}
+  body:not(.home) .header > a {order: 1; margin-left: 0;position: relative;left: auto;}
   body .container, body .container-prd{padding:0 30px;}
   .about-container .hero-section .hero-text{flex: 2 1 235px;
   .subheading{font-size:12px;} h1{font-size:30px; line-height:35px;}
@@ -196,7 +197,9 @@
 @media only screen and ( max-width: 767px ){
   .container{padding:0 20px !important;}
   .promo-bnr{font-size:12px;}
+  .home .header > a svg, body:not(.home) .header > a svg{width:185px;}
   .home .header > a{position: relative; left: 0;margin-left: 0;margin-top: 0;}
+  body:not(.home) .header > a { margin-left: 0;position: relative;left: auto;}
   .home .header > a img {width: 180px;}
   .header-ctas a, .header-ctas a + .reset { display: none;}
   .home{
