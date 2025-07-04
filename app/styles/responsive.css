@@ -1,7 +1,7 @@
 @media only screen and ( min-width: 1050px ) and ( max-width: 1440px ){
   .high-wrap .imageBox img {width: 100%;}
   .home {
-    .banner-hme{padding: 200px 50px 100px;}
+    .banner-hme{padding: 150px 50px 100px;}
     .banner-hme .text-center h1{font-size:50px; line-height:55px;}
     .deal-info h3{font-size:20px;}
     .deal-price{font-size:16px;}
@@ -97,7 +97,7 @@
 @media only screen and ( min-width: 768px ) and ( max-width: 1024px )
 {
   .highlightSection .container-prd .high-wrap{display:block;}
-  .container .banner-hme{padding: 200px 20px 100px;}
+  .container .banner-hme{padding: 150px 20px 100px;}
   .container .banner-hme .text-center {max-width: 100%;}
   .container .banner-hme .text-center h1{font-size:40px;}
   .highlightSection h2{font-size:40px;}
