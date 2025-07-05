@@ -46,6 +46,9 @@
     font-size: 20px;
     font-family: 'So:hne Breit Kra:ftig';
     color: #181717;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 .accordion-content {

@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import './ImageAccordionSection.css';
 export default function ImageAccordionSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -42,8 +42,10 @@ export default function ImageAccordionSection() {
             key={index}
             className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
           >
+            
             <button onClick={() => toggleAccordion(index)} className="accordion-title">
               {item.title}
+              <span className="icon">{activeIndex === index ? '−' : '+'}</span>
             </button>
             {activeIndex === index && (
               <div className="accordion-content">{item.content}</div>

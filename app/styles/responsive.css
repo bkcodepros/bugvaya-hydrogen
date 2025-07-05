@@ -15,9 +15,9 @@
     .description + p{font-size:16px;}
     .viewAll a{font-size:18px;padding: 15px 35px;}
     .viewAll a svg{width: 22px; height: auto;}
-    section.new-collection{padding: 150px 100px;}
+    section.new-collection{padding: 100px 100px;}
     .new-collection .col-text h2{font-size: 40px; line-height: 45px;}
-    .image-accordion-section .left-image{padding-right: 0; width: 48%;}
+    .image-accordion-section .left-image{padding-right: 0; width: 46%;}
     .right-accordion{max-width: 48%; padding-left:0;}
     .image-accordion-section .right-accordion h2{line-height:45px; font-size:40px;}
     .botenical-hme{padding: 100px 50px; background-size: cover;}
