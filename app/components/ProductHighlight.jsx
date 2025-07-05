@@ -35,8 +35,8 @@ export default function ProductHighlight() {
               </span>
             </label>
             <select className="select">
-              <option>Every 2 months</option>
               <option>Every 1 month</option>
+              <option>Every 2 months</option>
               <option>Every 3 months</option>
             </select>
           </div>

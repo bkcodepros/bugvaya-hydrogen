@@ -1,7 +1,7 @@
 @media only screen and ( min-width: 1050px ) and ( max-width: 1750px ){
   .high-wrap .imageBox img {width: 100%;}
   .home {
-    .banner-hme{padding: 100px 50px 100px;}
+    .banner-hme{padding: 200px 50px 100px;}
     .banner-hme .text-center h1{font-size:50px; line-height:55px;}
     .deal-info h3{font-size:20px;}
     .deal-price{font-size:16px;}
