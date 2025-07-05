@@ -7,8 +7,13 @@
     .deal-price{font-size:16px;}
     .highlightSection{padding: 2rem 0rem;}
     .highlightSection h2{font-size:40px; margin:0;}
-    .highlightSection .description{margin-bottom:5px;}
-    .infoBox .title{font-size:40px;}
+    .highlightSection .description{margin-bottom:5px; display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;}
+    .infoBox .title{font-size:40px; margin:0;}
+    .container-prd .high-wrap{padding:30px;}
+    .features{margin-bottom:10px;}
     .features li{font-size:15px;  margin: 0; line-height:23px;}
     input + span{font-size:20px;}
     .pricingBox span.price {font-size: 20px;}
@@ -23,6 +28,7 @@
     .botenical-hme{padding: 100px 50px; background-size: cover;}
     .botenical-hme .botenical-txt h2{font-size:40px;}
     .botenical-hme .botenical-txt p{font-size: 18px;}
+    .pricingBox{margin-bottom:10px;}
 
   }
   .about{
